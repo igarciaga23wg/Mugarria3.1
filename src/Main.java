@@ -1,5 +1,3 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 import javax.swing.*;
 import java.awt.*;
 
@@ -23,7 +21,7 @@ public class Main {
         contentPane.add(panelEkialdea, BorderLayout.EAST);
         JRadioButton[] radioBotoiak = new JRadioButton[3];
         ButtonGroup botoiTaldea = new ButtonGroup();
-        JPanel panelEkialdeaBarne = new JPanel(new GridLayout(3, 1));
+        JPanel panelEkialdeaBarne = new JPanel(new GridLayout(3, 1)); // Ekialdeko panelaren barneko kudeatzailea
         for (int i = 0; i < radioBotoiak.length; i++) {
             radioBotoiak[i] = new JRadioButton("OPT " + (i + 1));
             botoiTaldea.add(radioBotoiak[i]);
@@ -37,12 +35,10 @@ public class Main {
         panelHegoaldea.setLayout(new BoxLayout(panelHegoaldea, BoxLayout.X_AXIS));
         panelHegoaldea.setPreferredSize(new Dimension(0, 50));
         panelHegoaldea.add(new JButton("But 1"));
-        panelHegoaldea.add(Box.createHorizontalGlue());
         panelHegoaldea.add(new JButton("But 2"));
-        panelHegoaldea.add(Box.createHorizontalGlue());
         contentPane.add(panelHegoaldea, BorderLayout.SOUTH);
         JPanel panelZentroa = new JPanel(new GridLayout(2, 2));
-        ImageIcon ikonoa = new ImageIcon("descarga.jpeg"); // Egiaztatu irudi baliogarria dela
+        ImageIcon ikonoa = new ImageIcon("C:\\Users\\User\\IdeaProjects\\Mugarriak\\Mugarriak/descarga.jpeg"); // Egiaztatu irudi baliogarria dela
         for (int i = 0; i < 4; i++) {
             JLabel etiketa = new JLabel(ikonoa);
             panelZentroa.add(etiketa);
