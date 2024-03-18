@@ -20,7 +20,6 @@ public class Main {
         contentPane.add(panelIparraldea, BorderLayout.NORTH);
         JPanel panelEkialdea = new JPanel();
         panelEkialdea.setPreferredSize(new Dimension(250, 0));
-        panelEkialdea.setBackground(Color.LIGHT_GRAY);
         contentPane.add(panelEkialdea, BorderLayout.EAST);
         JRadioButton[] radioBotoiak = new JRadioButton[3];
         ButtonGroup botoiTaldea = new ButtonGroup();
@@ -43,7 +42,7 @@ public class Main {
         panelHegoaldea.add(Box.createHorizontalGlue());
         contentPane.add(panelHegoaldea, BorderLayout.SOUTH);
         JPanel panelZentroa = new JPanel(new GridLayout(2, 2));
-        ImageIcon ikonoa = new ImageIcon("argazkia.jpg"); // Egiaztatu irudi baliogarria dela
+        ImageIcon ikonoa = new ImageIcon("descarga.jpeg"); // Egiaztatu irudi baliogarria dela
         for (int i = 0; i < 4; i++) {
             JLabel etiketa = new JLabel(ikonoa);
             panelZentroa.add(etiketa);
